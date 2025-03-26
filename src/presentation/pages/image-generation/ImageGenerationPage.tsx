@@ -50,6 +50,9 @@ export const ImageGenerationPage = () => {
 
   return (
     <div className="flex flex-col h-full w-full max-w-4xl mx-auto p-4 sm:p-6 bg-gray-900 text-white rounded-lg shadow-lg">
+      <span className="text-center text-2xl font-bold block sm:hidden">
+        Generar Imagen
+      </span>
       <div className="flex-1 overflow-y-auto h-auto p-3 space-y-6">
         <GptMessage text="¿Qué imagen deseas generar hoy?" />
         {messages.map((message, index) =>
